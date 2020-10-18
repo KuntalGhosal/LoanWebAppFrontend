@@ -10,34 +10,36 @@ const Header = () => {
 
     return (
 
-        <Container>
-            <Row>
-                <Col>
-                    <Navbar expand="md">
+        <div>
+            <Navbar dark color='primary' expand="lg">
 
-                        <NavLink to="/">
-                            Logo
+                <NavLink to="/" className="navlink-item" className="logo-head">
+                    InstantLoan
                         </NavLink>
 
-                        <NavbarToggler onClick={toggle} />
-                        <Collapse isOpen={isOpen} navbar>
-                            <Nav className="ml-auto" navbar>
-                                <NavItem className="ml-2">
-                                    <NavLink to="/">Home</NavLink>
-                                </NavItem>
-                                <NavItem className="ml-2">
-                                    <NavLink to="/About">About</NavLink>
-                                </NavItem>
-                                <NavItem className="ml-2">
-                                    <NavLink to="/Contact">Contact</NavLink>
-                                </NavItem>
-                            </Nav>
+                <NavbarToggler onClick={toggle} />
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="ml-auto" navbar>
+                        <NavItem className="ml-2">
+                            <NavLink to="/" className="navlink-item">Home</NavLink>
+                        </NavItem>
+                        <NavItem className="ml-2">
+                            <NavLink to="/About" className="navlink-item">About</NavLink>
+                        </NavItem>
+                        <NavItem className="ml-2">
+                            <NavLink to="/Contact" className="navlink-item">Contact</NavLink>
+                        </NavItem>
+                        <NavItem className="ml-2">
+                            <NavLink to="/Signup" className="navlink-item">Sign up</NavLink>
+                        </NavItem>
+                        <NavItem className="ml-2">
+                            <NavLink to="/login" className="navlink-item">Log In</NavLink>
+                        </NavItem>
+                    </Nav>
 
-                        </Collapse>
-                    </Navbar>
-                </Col>
-            </Row>
-        </Container>
+                </Collapse>
+            </Navbar>
+        </div>
 
     );
 }

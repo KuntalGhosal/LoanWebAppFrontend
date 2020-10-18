@@ -5,13 +5,19 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
+//import Footer from './Components/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <div>
+        <App />
+      </div>
+      <div>
+        
+      </div>
     </BrowserRouter>
-    
+
 
   </React.StrictMode>,
   document.getElementById('root')
