@@ -18,22 +18,22 @@ function App() {
   return (
 
     <React.Fragment>
-    
-      <Header/>
+
+      <Header />
       <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/About" component={About} />
-          <Route exact path="/Contact" component={Contact} />
-          <Route exact path="/Signup" component={Signup} />
-          <Route exact path="/updateProfile" component={UpdateProfile} />
-          <Route exact path="/paymentOptions" component={PaymentOptions} />
-          <Route exact path="/login" component={Login} />
-          <Redirect to={Home} />
-     </Switch>
-     <Footer/>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/About" component={About} />
+        <Route exact path="/Contact" component={Contact} />
+        <Route exact path="/Signup" component={Signup} />
+        <Route exact path="/updateProfile" component={UpdateProfile} />
+        <Route exact path="/paymentOptions" component={PaymentOptions} />
+        <Route exact path="/login" component={Login} />
+        <Redirect to={Home} />
+      </Switch>
+      {/* <Footer/> */}
     </React.Fragment>
-    
-    
+
+
   );
 }
 
